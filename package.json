@@ -1,0 +1,46 @@
+{
+    "name": "copy-to-figma",
+    "version": "0.1.0",
+    "description": "Copy color palettes, type scales, icon grids and full styleguides into Figma as editable frames — plain clipboard SVG, no plugin required.",
+    "type": "module",
+    "main": "dist/copy-to-figma.iife.js",
+    "module": "src/index.js",
+    "exports": {
+        ".": {
+            "import": "./src/index.js",
+            "default": "./dist/copy-to-figma.iife.js"
+        }
+    },
+    "files": [
+        "src",
+        "dist",
+        "README.md",
+        "LICENSE"
+    ],
+    "scripts": {
+        "build": "esbuild src/index.js --bundle --format=esm --outfile=dist/copy-to-figma.esm.js && esbuild src/index.js --bundle --format=iife --global-name=CopyToFigma --outfile=dist/copy-to-figma.iife.js",
+        "test": "node test/smoke.mjs"
+    },
+    "keywords": [
+        "figma",
+        "clipboard",
+        "svg",
+        "styleguide",
+        "design-tokens",
+        "color-palette",
+        "typography",
+        "icons",
+        "copy-paste",
+        "design-tools"
+    ],
+    "author": "jinero.online",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/jinero-online/copy-to-figma.git"
+    },
+    "homepage": "https://github.com/jinero-online/copy-to-figma#readme",
+    "devDependencies": {
+        "esbuild": "^0.24.0"
+    }
+}
