@@ -19,8 +19,12 @@
     ],
     "scripts": {
         "build": "esbuild src/index.js --bundle --format=esm --outfile=dist/copy-to-figma.esm.js && esbuild src/index.js --bundle --format=iife --global-name=CopyToFigma --outfile=dist/copy-to-figma.iife.js && cp dist/copy-to-figma.iife.js docs/copy-to-figma.iife.js",
-        "test": "node test/smoke.mjs"
+        "test": "node test/smoke.mjs",
+        "prepublishOnly": "npm run build && npm test"
     },
+    "sideEffects": false,
+    "unpkg": "dist/copy-to-figma.iife.js",
+    "jsdelivr": "dist/copy-to-figma.iife.js",
     "keywords": [
         "figma",
         "clipboard",
