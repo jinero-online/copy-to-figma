@@ -1,5 +1,8 @@
 # copy-to-figma
 
+[![npm](https://img.shields.io/npm/v/copy-to-figma)](https://www.npmjs.com/package/copy-to-figma)
+[![license](https://img.shields.io/npm/l/copy-to-figma)](LICENSE)
+
 Copy color palettes, type scales, icon grids and full styleguides **into Figma as editable frames** — through the plain clipboard. No Figma plugin, no extension, no account. One button on your site → `⌘V` in Figma.
 
 **▶ [Live demo](https://jinero-online.github.io/copy-to-figma/)** — click "Copy full styleguide", switch to Figma, paste.
@@ -18,14 +21,19 @@ That makes clipboard SVG the only **zero-install** channel into Figma: every alt
 
 ## Install
 
-```html
-<!-- script tag (IIFE, exposes window.CopyToFigma) -->
-<script src="https://cdn.jsdelivr.net/gh/jinero-online/copy-to-figma@main/dist/copy-to-figma.iife.js"></script>
+```bash
+npm install copy-to-figma
 ```
 
 ```js
-// or as an ES module
 import { copyStyleguideToClipboard } from 'copy-to-figma';
+```
+
+Or drop it in with a script tag (IIFE, exposes `window.CopyToFigma`):
+
+```html
+<script src="https://cdn.jsdelivr.net/npm/copy-to-figma@0.1.0/dist/copy-to-figma.iife.js"></script>
+<!-- or https://unpkg.com/copy-to-figma -->
 ```
 
 ## Quick start
