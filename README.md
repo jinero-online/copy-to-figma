@@ -2,6 +2,8 @@
 
 Copy color palettes, type scales, icon grids and full styleguides **into Figma as editable frames** — through the plain clipboard. No Figma plugin, no extension, no account. One button on your site → `⌘V` in Figma.
 
+**▶ [Live demo](https://jinero-online.github.io/copy-to-figma/)** — click "Copy full styleguide", switch to Figma, paste.
+
 Built and battle-tested on [jinero.online](https://jinero.online) (the "Copy to Figma" buttons on the [Design System Generator](https://jinero.online/dev/design-system), [Website Style Extractor](https://jinero.online/dev/style-extractor) and [Icon Library](https://jinero.online/icons/library)).
 
 ## How it works
