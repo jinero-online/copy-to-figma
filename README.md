@@ -4,6 +4,8 @@ Copy color palettes, type scales, icon grids and full styleguides **into Figma a
 
 **▶ [Live demo](https://jinero-online.github.io/copy-to-figma/)** — click "Copy full styleguide", switch to Figma, paste.
 
+![Copy a selection of icons from a web app and paste it into Figma as editable vectors](demo.gif)
+
 Built and battle-tested on [jinero.online](https://jinero.online) (the "Copy to Figma" buttons on the [Design System Generator](https://jinero.online/dev/design-system), [Website Style Extractor](https://jinero.online/dev/style-extractor) and [Icon Library](https://jinero.online/icons/library)).
 
 ## How it works
